@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        h1, h2 {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHlycXVzZ2dudHRpd25haG93NzZqMDdyZXhraGNhaDdjb3R5ZHZpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5PhS19L1B0cxOyI1mB/giphy.gif') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            z-index: -1;
+        }
+
+        button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #d6336c;
+        }
+    </style>
+</head>
+<body>
+    <div class="fireworks"></div>
+    <h1>🎉 Congratulations! 🎉</h1>
+    <h2>You got through OTS. It was tough maybe... but you made it!</h2>
+
+    <button onclick="navigateToValentine()">Click this If no one wished you Happy Valentine’s Day</button>
+
+    <script>
+        function navigateToValentine() {
+            window.location.href = "valentine.html";
+        }
+    </script>
+</body>
+</html>
