@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back, Lieutenant!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffccd5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d6336c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back, Lieutenant <span id="name"></span>!</h1>
+        <p>Happy Valentine's Day if no one has told you! 💖</p>
+    </div>
+    <script>
+        // Set default name to "Shaunte"
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name') || "Shaunte";
+        document.getElementById("name").textContent = name;
+    </script>
+</body>
+</html>
